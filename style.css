@@ -7,10 +7,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -97,17 +100,17 @@
 }
 
 .nav__link a {
-  font-family: 'Montserrat', sans-serif;
+  color: #333;
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
 }
 
 .nav__number {
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
   text-decoration: underline;
+  color: #333;
 }
 
 /* Header */
@@ -257,14 +260,16 @@
 /* Steps */
 
 .steps {
+  display: flex;
   width: 100%;
   max-width: 1106px;
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .steps__item {
+  display: block;
+  list-style-type: none;
   position: relative;
   width: 400px;
   margin-bottom: 103px;
@@ -444,6 +449,10 @@
   margin-bottom: 14px;
 }
 
+.reviews__link a {
+  color: #333;
+}
+
 /* Form */
 
 .form {
@@ -509,6 +518,10 @@
   margin-left: 24px;
 }
 
+.map__list a {
+  color: #333;
+}
+
 /* Socials */
 
 .socials {
@@ -569,6 +582,11 @@
   margin-bottom: 15px;
 }
 
+.links__item a {
+  color: #333;
+  text-decoration: none;
+}
+
 /* Socials */
 
 .socials__email {
@@ -587,6 +605,7 @@
 
 .contacts__num {
   font-weight: 500;
+  color: #333;
   font-size: 20px;
   text-decoration: underline;
   text-align: center;
