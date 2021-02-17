@@ -6,7 +6,7 @@
     const phoneField = document.querySelector('#phoneField');
 
     /* Regular expensions */
-    const phoneReg =   /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/;
+    const phoneReg =   /^(?=[\d{11,}\s])(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/;
     const nameReg = /^[_.-a-zа-я]{3,16}$/i;
 
     /* Check name and phone */
@@ -20,15 +20,17 @@
       }
   
     });
+
+    /* Check correct value */
+    function isUncorrectValue(reg, input, className) {
+      if( reg.test(input.value) ) {
+        input.classList.remove(className);
+        return true;
+      } 
+
+      input.classList.add(className);
+      return false;
+    }
+
+
   })();
-
-  /* Check correct value */
-  function isUncorrectValue(reg, input, className) {
-  	if( reg.test(input.value) ) {
-      input.classList.remove(className);
-      return true;
-    } 
-
-    input.classList.add(className);
-    return false;
-  }
