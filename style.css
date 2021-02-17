@@ -423,7 +423,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   list-style: none;
-  list-style-image: url('./images/svg/checkIcon.svg');
+  list-style-image: url("images/svg/checkIcon.svg");
   margin-bottom: 35px;
 }
 
@@ -540,7 +540,7 @@ body {
   width: 100%;
   max-width: 1924px;
   height: 666px;
-  background: url('./images/jpg/Rectangle 21.jpg');
+  background: url("images/jpg/Rectangle 21.jpg");
 }
 
 .map__block {
