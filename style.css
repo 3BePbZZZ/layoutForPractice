@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-/*
-  font-family: 'Montserrat', sans-serif;
-*/
+@import url("https//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 * {
   margin: 0;
@@ -41,11 +37,16 @@ body {
   font-size: 20px;
   text-align: center;
   line-height: 2.2;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #EFDB00;
 }
 
 .btn-header {
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   line-height: 1.6;
   background: #FF352B;
@@ -55,7 +56,6 @@ body {
 
 .btn-form {
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   line-height: 1.6;
   background: #FF352B;
@@ -63,8 +63,12 @@ body {
   margin-bottom: 24px;
 }
 
+.btn-header:hover,
+.btn-form:hover {
+  background: #E50101;
+}
+
 .btn-black {
-  width: 250px;
   background: none;
   border: 1px solid #333;
 }
@@ -74,7 +78,13 @@ body {
   margin-bottom: 90px;
 }
 
-/* Navigator */
+.btn-reviews:hover,
+.btn-black:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Navigator  start */
 
 .nav {
   height: 80px;
@@ -93,27 +103,32 @@ body {
   display: flex;
   justify-content: space-between;
   width: 400px;
-}
-
-.nav__link{
   list-style-type: none;
 }
 
-.nav__link a {
+.nav__link {
   color: #333;
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
 }
 
-.nav__number {
+.nav__link:hover {
+  border-bottom: 1px solid #333;
+}
+
+.nav__phone {
   font-size: 24px;
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
+  height: 34px;
+  border-bottom: 1px solid #333;
   color: #333;
 }
 
-/* Header */
+/* Navigator  end */
+
+/* Header start */
 
 .header {
   position: relative;
@@ -148,7 +163,7 @@ body {
 .header__peddler {
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 45%;
 }
 
 .header__car {
@@ -157,7 +172,10 @@ body {
   top: 30%;
 }
 
-/* Info */
+/* Header start */
+
+
+/* Info start */
 
 .info {
   width: 100%;
@@ -208,7 +226,9 @@ body {
   z-index: -10;
 }
 
-/* Section */
+/* Info end */
+
+/* Section start */
 
 .section {
   width: 100%;
@@ -220,13 +240,6 @@ body {
 
 .section--yellow {
   background: #FED100;
-}
-
-.section--map {
-  width: 100%;
-  max-width: 1924px;
-  height: 666px;
-  background: url('./images/jpg/Rectangle 21.jpg');
 }
 
 .section__inner {
@@ -257,7 +270,9 @@ body {
   line-height: 1.7;
 }
 
-/* Steps */
+/* Section end */
+
+/* Steps start */
 
 .steps {
   display: flex;
@@ -283,6 +298,7 @@ body {
   font-size: 50px;
   line-height: 2.3;
   font-weight: 300;
+  text-shadow: 2px 2px 2px #fed100;
 }
 
 .steps__title {
@@ -294,8 +310,9 @@ body {
   font-weight: 400;
 }
 
+/* Steps end*/
 
-/* Cards */
+/* Cards start */
 
 .cards {
   width: 100%;
@@ -350,7 +367,9 @@ body {
   margin-bottom: 50px;
 }
 
-/* Slider */
+/* Cards end */
+
+/* Slider start */
 
 .slider__btns {
   display: flex;
@@ -363,6 +382,11 @@ body {
   width: 200px;
   background: #fff;
   border: 1px solid #ebebeb;
+}
+
+.slider__btn:hover {
+  background:#FED100;
+  border: 1px solid #FED100;
 }
 
 .slider__btn.active {
@@ -390,7 +414,9 @@ body {
   top: 5%;
 }
 
-/* Characteristics */
+/* Slider end */
+
+/* Characteristics start */
 
 .characteristics {
   text-align: left;
@@ -413,7 +439,9 @@ body {
   margin-bottom: 28px;
 }
 
-/* Reviews */
+/* Characteristics start */
+
+/* Reviews start */
 
 .reviews {
   width: 100%;
@@ -428,7 +456,7 @@ body {
   max-width: 420px;
 }
 
-.reviews__title {
+.reviews__name {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 10px;
@@ -453,7 +481,9 @@ body {
   color: #333;
 }
 
-/* Form */
+/* Reviews end */
+
+/* Form start */
 
 .form {
   width: 100%;
@@ -461,7 +491,7 @@ body {
   margin: 124px 0;
 }
 
-.form form {
+.form .form-block {
   height: 40px;
   display: flex;
   align-items: center;
@@ -479,10 +509,18 @@ body {
 }
 
 .form__field {
+  width: 220px;
   position: relative;
   border: none;
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form__field.uncorrect {
+  border-bottom: 3px solid #E30000;
 }
 
 .form__btns {
@@ -494,7 +532,16 @@ body {
   margin-right: 10px;
 }
 
-/* Map */
+/* Form end */
+
+/* Map start */
+
+.map {
+  width: 100%;
+  max-width: 1924px;
+  height: 666px;
+  background: url('./images/jpg/Rectangle 21.jpg');
+}
 
 .map__block {
   margin-top: 200px;
@@ -518,11 +565,20 @@ body {
   margin-left: 24px;
 }
 
-.map__list a {
+.map__phone, 
+.map__email {
   color: #333;
+  text-decoration: none;
 }
 
-/* Socials */
+.map__email {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #333;
+}
+
+/* Map end */
+
+/* Socials start */
 
 .socials {
   width: 120px;
@@ -535,7 +591,15 @@ body {
   margin-left: 230px;
 }
 
-/* footer */
+.socials__email {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Socials end */
+
+/* footer start */
 
 .footer {
   display: flex;
@@ -556,7 +620,9 @@ body {
   align-items: center;
 }
 
-/* Policy */
+/* footer end */
+
+/* Policy start */
 
 .policy {
   width: 238px;
@@ -572,7 +638,14 @@ body {
   margin-top: 36px;
 }
 
-/* Links */
+.policy__item a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Policy end */
+
+/* Links start */
 
 .links {
   list-style-type: none;
@@ -587,15 +660,13 @@ body {
   text-decoration: none;
 }
 
-/* Socials */
-
-.socials__email {
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 20px;
+.links__item a:hover {
+  border-bottom: 1px solid #333;
 }
 
-/* Contacts */ 
+/* Links end */
+
+/* Contacts start */ 
 
 .contacts {
   display: flex;
@@ -603,15 +674,66 @@ body {
   align-items: center;
 }
 
-.contacts__num {
+.contacts__phone {
+  display: block;
+  height: 28px;
+
+  text-decoration: none;
   font-weight: 500;
-  color: #333;
   font-size: 20px;
-  text-decoration: underline;
+  color: #333;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
-/* Media */
+/* Contacts end */ 
+
+/* Media start */
+
+@media screen and (max-width: 1310px) {
+  .nav {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .header__title,
+  .header__suptitle,
+  .btn-header,
+  .info {
+    margin-left: 40px;
+  }
+
+  .header__peddler {
+   left: 47%;
+  }
+
+  .info {
+    width: 300px;
+  }
+
+  .info__item {
+    font-size: 14px;
+  }
+  
+  .info__img {
+    margin-right: 20px;
+  }
+
+
+  .info__phone {
+    left: 39%;
+  }
+
+  .reviews {
+    justify-content: space-around;
+  }
+
+  .reviews__item {
+    width: 400px;
+  }
+
+}
+
 
 @media screen and (max-width: 500px) {
   .nav {
@@ -657,3 +779,5 @@ body {
     margin: 0 16%;
   }
 }
+
+/* Media end */

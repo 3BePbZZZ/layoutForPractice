@@ -4,32 +4,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="./style.css">
-	<script src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script async src="main.js"></script>
 </head>
 <body>
  <div class="wrapper">
   <header class="header">
     <div class="container">
 
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <div class="nav__logo">MOVEE</div>
         <ul class="nav__list">
-        	<li class="nav__link"><a href="#">Цены</a></li>
-        	<li class="nav__link"><a href="#">Автопарк</a></li>
-        	<li class="nav__link"><a href="#">Отзывы</a></li>
-        	<li class="nav__link"><a href="#">Контакты</a></li>
+        	<li><a class="nav__link" href="#prices">Цены</a></li>
+        	<li><a class="nav__link" href="#autopark">Автопарк</a></li>
+        	<li><a class="nav__link" href="#reviews">Отзывы</a></li>
+        	<li><a class="nav__link" href="#contacts">Контакты</a></li>
         </ul>
-        <a href="tel:8(800)-080-12-13" class="nav__number">8(800)-080-12-13</a>
+        <a href="tel:+8(800)-080-12-13" class="nav__phone">8(800)-080-12-13</a>
       </nav>
 
-     <div class="header__car"><img src="./images/png/car.png" alt="car"></div>
+     <div class="header__car">
+      <img src="images/png/car.png" alt="car" />
+     </div>
      <div class="header__peddler">
-       <img src="./images/png/peddler.png" alt="peddler" />
+       <img src="images/png/peddler.png" alt="peddler" />
      </div>
 
-     <div class="header__title">Квартирные переезды</div>
-     <div class="header__suptitle">По Москве и области</div>
+     <h2 class="header__title">Квартирные переезды</h2>
+     <h3 class="header__suptitle">По Москве и области</h3>
      <button class="btn btn-header">Заказать</button>
 
      <div class="info">
@@ -60,57 +62,50 @@
      </div>
     </div>
     <div class="info__phone">
-          <img src="images/svg/phone.svg" alt="truck" />
+        <img src="images/svg/phone.svg" alt="truck" />
     </div>
   </header>
 
   <section class="section">
-    <div class="container">
-     <div class="section__inner">
+       <section class="section__header">
+    	   <div class="section__title">Как это происходит?</div>
+      </section>
 
-     <div class="section__header">
-    	<div class="section__title">Как это происходит?</div>
-     </div>
-     <div class="steps">
-     	<ul class="steps__item">
-     		<li class="steps__num">01</li>
-     		<li class="steps__title">Оценка объема предстоящих работ</li>
-     		<li class="steps__text">Стоимость переезда зависит от количества комнат, вещей и мебели.</li>
-     	</ul>
-     	<ul class="steps__item">
-     		<li class="steps__num">02</li>
-     		<li class="steps__title">Упаковка вещей</li>
-     		<li class="steps__text">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно. </li>
-     	</ul>
-     	<ul class="steps__item">
-     		<li class="steps__num">03</li>
-     		<li class="steps__title">Погрузка и транспортировка вещей</li>
-     		<li class="steps__text">В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</li>
-     	</ul>
-     	<ul class="steps__item">
-     		<li class="steps__num">04</li>
-     		<li class="steps__title">Распаковка и расстановка мебели</li>
-     		<li class="steps__text">Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</li>
-     	</li>
-       </ul>
-    </div>
+       <div class="steps">
+      	<ul class="steps__item">
+      		<li class="steps__num">01</li>
+      		<li class="steps__title">Оценка объема предстоящих работ</li>
+      		<li class="steps__text">Стоимость переезда зависит от количества комнат, вещей и мебели.</li>
+      	</ul>
+      	<ul class="steps__item">
+      		<li class="steps__num">02</li>
+      		<li class="steps__title">Упаковка вещей</li>
+      		<li class="steps__text">Упаковываем вещи в коробки, подписываем. Габаритное и деликатное,  упаковываем отдельно. </li>
+      	</ul>
+      	<ul class="steps__item">
+      		<li class="steps__num">03</li>
+      		<li class="steps__title">Погрузка и транспортировка вещей</li>
+      		<li class="steps__text">В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</li>
+      	</ul>
+      	<ul class="steps__item">
+      		<li class="steps__num">04</li>
+      		<li class="steps__title">Распаковка и расстановка мебели</li>
+      		<li class="steps__text">Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</li>
+        </ul>
+      </div>
 
-     </div>
-    </div>
   </section>
 
-  <section class="section">
-  	<div class="container">
-  	  <div class="section__inner">
+  <section class="section" id="prices">
 
-  	   <div class="section__header">
-  	   	<div class="section__title">Цены</div>
-  	   	<div class="section__suptitle">Фиксированная стоимость на переезд под ключ</div>
-  	   </div>
+  	   <section class="section__header">
+  	   	<h2 class="section__title">Цены</h2>
+  	   	<h3 class="section__suptitle">Фиксированная стоимость на переезд под ключ</h3>
+  	   </section>
   	   
   	   <div class="cards">
   	   	<div class="cards__item">
-  	   		<div class="cards__title">1-комнатная кв-ра</div>
+  	   		<h4 class="cards__title">1-комнатная кв-ра</h4>
   	   		<div class="cards__text">
   	   		  <p>1 фургон</p>
   	   		  <p>2 грузчика</p>
@@ -120,7 +115,7 @@
   	   		<div class="btn cards__btn">Заказать</div>
   	   	</div>
   	   	<div class="cards__item">
-  	   		<div class="cards__title">2-комнатная кв-ра</div>
+  	   		<h4 class="cards__title">2-комнатная кв-ра</h4>
   	   		<div class="cards__text">
   	   		  <p>1 газель - 3 метра </p>
   	   		  <p>2 грузчика</p>
@@ -130,7 +125,7 @@
   	   		<div class="btn">Заказать</div>
   	   	</div>
   	   	<div class="cards__item">
-  	   		<div class="cards__title">3-комнатная кв-ра</div>
+  	   		<h4 class="cards__title">3-комнатная кв-ра</h4>
   	   		<div class="cards__text">
   	   		  <p>1 газель - 4 метра</p>
   	   		  <p>2 грузчика</p>
@@ -141,17 +136,15 @@
   	   	</div>
   	   </div>
 
-  	  </div>
-  	</div>
   </section>
 
-  <section class="section">
+  <section class="section" id="autopark">
   	<div class="container">
   	  <div class="section__inner">
   	   
   	  	<div class="section__header">
-  	  	  <h3 class="section__title">Автопарк</h3>
-  	  	  <h4 class="section__suptitle">10 видов автомобилей от 800 кг до 10 тонн</h4>
+  	  	  <h2 class="section__title">Автопарк</h2>
+  	  	  <h3 class="section__suptitle">10 видов автомобилей от 800 кг до 10 тонн</h3>
   	  	</div>
 
         <div class="slider__btns">
@@ -179,15 +172,15 @@
   	</div>
   </section>
 
-  <section class="section section--yellow">
+  <section class="section section--yellow" id="reviews">
     <div class="container">
-      <div class="section__header section__header--reviews">
-        <h3 class="section__title">Отзывы</h3>
-      </div>
+      <section class="section__header section__header--reviews">
+        <h2 class="section__title">Отзывы</h2>
+      </section>
 
       <div class="reviews">
         <div class="reviews__item">
-          <div class="reviews__title">Ирина</div>
+          <div class="reviews__name">Ирина</div>
           <div class="reviews__date">24.03.2019</div>
           <div class="reviews__rating">
             <img src="./images/png/star.png" alt="star">
@@ -196,17 +189,18 @@
             <img src="./images/png/star.png" alt="star">
             <img src="./images/png/star.png" alt="star">
           </div>
-          <div class="reviews__text">
+          <p class="reviews__text">
             Обращение к вам за помощью в переезде оставило только 
             положительные впечатления. Хотелось отметить замечательного 
             водителя газели Алексея. Были трудности с заездом во двор, 
             он проявил себя как компетентный и профессиональный сотрудник, 
             за что ему огромное...  
-          </div>
+          </p>
           <div class="reviews__link"><a href="#">Читать полностью</a></div>
         </div>
+
         <div class="reviews__item">
-          <div class="reviews__title">Светлана Васильевна </div>
+          <div class="reviews__name">Светлана Васильевна </div>
           <div class="reviews__date">13.09.2019</div>
           <div class="reviews__rating">
             <img src="./images/png/star.png" alt="star">
@@ -215,17 +209,18 @@
             <img src="./images/png/star.png" alt="star">
             <img src="./images/png/star.png" alt="star">
           </div>
-          <div class="reviews__text">
+          <p class="reviews__text">
              Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, 
              несмотря на то, что к нам опоздали на 1,5 часа. Морально были 
              к этому готовы ( в прошлый переезд в другой фирме тоже опоздали 
              на час). Водитель заранее позвонил, предупредил, что задерживается. 
              Когда....
-          </div>
+          </p>
           <div class="reviews__link"><a href="#">Читать полностью</a></div>
         </div>
+
         <div class="reviews__item">
-          <div class="reviews__title">Ольга Петрова</div>
+          <div class="reviews__name">Ольга Петрова</div>
           <div class="reviews__date">11.11.2019</div>
           <div class="reviews__rating">
             <img src="./images/png/star.png" alt="star">
@@ -234,54 +229,47 @@
             <img src="./images/png/star.png" alt="star">
             <img src="./images/png/star.png" alt="star">
           </div>
-          <div class="reviews__text">
+          <p class="reviews__text">
             Могу на 100% порекомендовать компанию MOVEE и отметить, 
             что цены фиксированы, что упрощает расчет. Безо всяких 
             заморочек, в отличии от их конкурентов. Упаковали все 
             качественно и быстро. Все вещи приехали в сохранности. 
             Особлая благодарность Александру за его..
-          </div>
+          </p>
           <div class="reviews__link"><a href="#">Читать полностью</a></div>
         </div>
       </div>
+
       <button class="btn btn-black btn-reviews">Все отзывы</button>
+
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-     <div class="section__inner">
-
-      <div class="form">
+  <section class="form">
         <h3 class="form__title">Закажи  переезд прямо сейчас</h3>
         <div class="form__suptitle">Мы перезвоним в течении 10 секунд</div>
-        <form action="post">
-          <input placeholder="Ваше имя" class="form__field" type="text" />
-          <input placeholder="Телефон" class="form__field" type="text" />
+        <div class="form-block">
+          <input placeholder="Ваше имя" class="form__field" id="nameField" type="text" />
+          <input placeholder="Телефон" class="form__field" id="phoneField" type="text" />
           <div class="form__btns">
-            <button class="btn btn-form">Перезвонить мне</button>
+            <button class="btn btn-form" id="callBtn">Перезвонить мне</button>
             <div class="form__checkbox">
               <input id="form__checkbox" type="checkbox" />
               <label for="form__checkbox">Даю согласие на обработку данных</label>
             </div>
           </div>
-        </form>
-      </div>
+       </div>
+  </section> 
 
-     </div>
-    </div>
-  </section>
-
-  <section class="section section--map">
+  <section class="map" id="contacts">
     <div class="container">
-      <div class="map__block">
-        <div class="map__title">MOVEE</div>
+
+     <div class="map__block"> 
+        <h2 class="map__title">MOVEE</h2>
         <ul class="map__data">
-          <li class="map__list">Москва, Волгоградский пр-т, 38
-</li>
-          <li class="map__list">8 (800)-080-12-13
-</li>
-          <li class="map__list"><a href="#">hello@movee.ru</a></li>
+          <li class="map__list">Москва, Волгоградский пр-т, 38</li>
+          <li class="map__list"><a class="map__phone" href="tel:+8 (800)-080-12-13">8 (800)-080-12-13</a></li>
+          <li class="map__list"><a class="map__email" href="#">hello@movee.ru</a></li>
         </ul>
         <div class="socials socials-map">
         <div class="socials__item">
@@ -297,9 +285,9 @@
           <img src="./images/svg/instagram.svg" alt="instagram">
         </div>
       </div>
-      </div>
-      
     </div>
+      
+    </div> 
   </section>
 
   <footer class="footer">
@@ -308,16 +296,16 @@
 
        <div class="policy">
          <div class="policy__title">MOVEE</div>
-         <div class="policy__item">Политика конфиденциальнности</div>
-         <div class="policy__item">Соглашение на обработку персональных данных</div>
+         <div class="policy__item"><a href="#">Политика конфиденциальнности</a></div>
+         <div class="policy__item"><a href="#">Соглашение на обработку персональных данных</a></div>
        </div>
 
        <ul class="links">
          <li class="links__item"><a href="#">Главная</a></li>
-         <li class="links__item"><a href="#">Цена</a></li>
-         <li class="links__item"><a href="#">Автопарк</a></li>
-         <li class="links__item"><a href="#">Отзывы</a></li>
-         <li class="links__item"><a href="#">Контакты</a></li>
+         <li class="links__item"><a href="#prices">Цена</a></li>
+         <li class="links__item"><a href="#autopark">Автопарк</a></li>
+         <li class="links__item"><a href="#reviews">Отзывы</a></li>
+         <li class="links__item"><a href="#contacts">Контакты</a></li>
        </ul>
 
       <div class="contacts">
@@ -339,7 +327,7 @@
       </div>
       <div class="contacts">
         <button class="btn btn-black">Обратный звонок</button>
-        <a href="tel:8(800)-080-12-13" class="contacts__num">8(800)-080-12-13</a>
+        <a href="tel:8(800)-080-12-13" class="contacts__phone">8(800)-080-12-13</a>
       </div>
 
     </div> 
